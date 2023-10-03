@@ -1,4 +1,20 @@
-﻿<Properties StartupConfiguration="{9280C051-9525-460E-8B2B-AB34A3796898}|https">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{9280C051-9525-460E-8B2B-AB34A3796898}|https">
+  <MonoDevelop.Ide.ItemProperties.ProductsShop PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ProductsShop FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProductsShopAPI" expanded="True">
+            <Node name="ProductsShop">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
