@@ -78,12 +78,53 @@ namespace ProductsShop.Repositories.Implementation
 
         public async Task<Status> LogoutAsync()
         {
-            throw new NotImplementedException();
+
+            await signInManager.SignOutAsync();
+            status.StatusCode = 1;
+            status.Message = "Signed out.";
+            return status;
         }
 
         public async Task<Status> RegistrationAsync(Registration model)
         {
-            throw new NotImplementedException();
+            var userExists = await userManager.FindByNameAsync(model.Username);
+            if (userExists != null)
+            {
+                status.StatusCode = 0;
+                status.Message = "User already exists.";
+                return status;
+            }
+
+            ApplicationUser user = new()
+            {
+                SecurityStamp = Guid.NewGuid().ToString(),
+                Name = model.Name,
+                Email = model.Email,
+                UserName = model.Username,
+                EmailConfirmed = true
+                
+            };
+            var result = await userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+            {
+                status.StatusCode = 0;
+                status.Message = "Unable to create user.";
+                return status;
+            }
+
+            if (!await roleManager.RoleExistsAsync(model.Role))
+            {
+                await roleManager.CreateAsync(new IdentityRole(model.Role));
+            }
+
+            if (await roleManager.RoleExistsAsync(model.Role))
+            {
+                await userManager.AddToRoleAsync(user, model.Role);
+            }
+
+            status.StatusCode = 1;
+            status.Message = "User Registered!";
+            return status;
         }
     }
 }
