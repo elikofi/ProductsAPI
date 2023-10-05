@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ProductsShop.Models.Domain;
+using ProductsShop.Models.DTO;
 
 namespace ProductsShop.Data
 {
@@ -11,6 +12,8 @@ namespace ProductsShop.Data
 		{
 
 		}
+
+		public DbSet<Product> Products { get; set; }
 	}
 }
 
