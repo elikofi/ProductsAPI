@@ -22,6 +22,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 
 
 builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
