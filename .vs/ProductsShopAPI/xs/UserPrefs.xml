@@ -1,25 +1,39 @@
-﻿<Properties StartupConfiguration="{9280C051-9525-460E-8B2B-AB34A3796898}|https" GitUserInfo="UsingGIT">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{9280C051-9525-460E-8B2B-AB34A3796898}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/elijahamoako/Projects/ProductsShopAPI/ProductsShop/Controllers/UserAuthenticationController.cs" relfile="ProductsShop/Controllers/UserAuthenticationController.cs" line="57" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.ProductsShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProductsShop/Models/DTO/Registration.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProductsShop/Models/DTO/Product.cs">
     <Files>
-      <File FileName="ProductsShop/Data/DatabaseContext.cs" />
-      <File FileName="ProductsShop/Models/Domain/ApplicationUser.cs" Line="9" Column="1" />
-      <File FileName="ProductsShop/Models/DTO/Login.cs" />
-      <File FileName="ProductsShop/Models/DTO/Status.cs" />
-      <File FileName="ProductsShop/Models/DTO/Registration.cs" Line="15" Column="13" />
-      <File FileName="ProductsShop/ProductsShop.csproj" />
+      <File FileName="ProductsShop/Data/DatabaseContext.cs" Line="17" Column="3" />
+      <File FileName="ProductsShop/Models/Domain/ApplicationUser.cs" Line="10" Column="42" />
+      <File FileName="ProductsShop/Models/DTO/Login.cs" Line="1" Column="1" />
+      <File FileName="ProductsShop/Models/DTO/Status.cs" Line="10" Column="2" />
+      <File FileName="ProductsShop/Repositories/Abstract/IUserAuthentication.cs" Line="12" Column="30" />
+      <File FileName="ProductsShop/Repositories/Implementation/UserAuthenticationService.cs" Line="119" Column="1" />
+      <File FileName="ProductsShop/Controllers/UserAuthenticationController.cs" Line="74" Column="1" />
+      <File FileName="ProductsShop/Models/DTO/Registration.cs" Line="26" Column="42" />
+      <File FileName="ProductsShop/Program.cs" Line="34" Column="2" />
+      <File FileName="ProductsShop/Models/DTO/Product.cs" Line="13" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProductsShopAPI" expanded="True">
-            <Node name="ProductsShop">
+          <Node name="ProductsShopAPI">
+            <Node name="ProductsShop" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="Domain" expanded="True" />
-                <Node name="DTO" expanded="True">
-                  <Node name="Registration.cs" selected="True" />
-                </Node>
+                <Node name="DTO" expanded="True" />
+              </Node>
+              <Node name="Repositories" expanded="True">
+                <Node name="Abstract" expanded="True" />
+                <Node name="Implementation" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -27,10 +41,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
