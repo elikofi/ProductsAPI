@@ -25,7 +25,7 @@ namespace ProductsShop.Controllers
         [HttpPost]
         [Route("Add")]
         [Authorize(Roles = "admin")]
-        public async Task<IActionResult> Add(Product model)
+        public async Task<IActionResult> Add( Product model)
         {
             if (!ModelState.IsValid)
             {

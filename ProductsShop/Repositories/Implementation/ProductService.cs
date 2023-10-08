@@ -37,6 +37,7 @@ namespace ProductsShop.Repositories.Implementation
                 status.StatusCode = 0;
                 status.Message = "Error occured! Couldn't add product.";
                 return status;
+                //throw;
             }
         }
 

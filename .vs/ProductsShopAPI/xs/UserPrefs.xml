@@ -1,27 +1,22 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{9280C051-9525-460E-8B2B-AB34A3796898}|https">
-  <MonoDevelop.Ide.ItemProperties.ProductsShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="ProductsShop/Models/DTO/Product.cs">
     <Files>
-      <File FileName="ProductsShop/Models/DTO/Product.cs" Line="21" Column="19" />
-      <File FileName="ProductsShop/Repositories/Implementation/UserAuthenticationService.cs" Line="1" Column="1" />
-      <File FileName="ProductsShop/Controllers/UserAuthenticationController.cs" Line="70" Column="17" />
-      <File FileName="ProductsShop/Controllers/ProductController.cs" Line="40" Column="39" />
-      <File FileName="ProductsShop/Repositories/Implementation/ProductService.cs" Line="41" Column="1" />
+      <File FileName="ProductsShop/Models/DTO/Product.cs" Line="22" Column="49" />
+      <File FileName="ProductsShop/Controllers/ProductController.cs" Line="23" Column="10" />
+      <File FileName="ProductsShop/Repositories/Implementation/ProductService.cs" Line="15" Column="36" />
+      <File FileName="ProductsShop/Data/DatabaseContext.cs" Line="16" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProductsShopAPI">
-            <Node name="ProductsShop">
+          <Node name="ProductsShopAPI" expanded="True">
+            <Node name="ProductsShop" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models">
-                <Node name="Domain" expanded="True" />
-                <Node name="DTO">
-                  <Node name="Product.cs" selected="True" />
-                </Node>
+              <Node name="Models" expanded="True">
+                <Node name="DTO" expanded="True" />
               </Node>
               <Node name="Repositories" expanded="True">
                 <Node name="Abstract" expanded="True" />
@@ -37,4 +32,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ProductsShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
