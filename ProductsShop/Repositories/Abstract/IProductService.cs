@@ -15,9 +15,7 @@ namespace ProductsShop.Repositories.Abstract
 
         public IEnumerable<Product> GetAll();
 
-        public IEnumerable<Product> GetBySearch();
-
-        Task<Status> DetailsAsync(Guid id);
+        //public IEnumerable<Product> GetBySearch();
     }
 }
 

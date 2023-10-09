@@ -41,35 +41,65 @@ namespace ProductsShop.Repositories.Implementation
             }
         }
 
+        public async Task<Status> UpdateAsync(Product model)
+        {
+            try
+            {
+                context.Products.Update(model);
+                await context.SaveChangesAsync();
+                status.StatusCode = 1;
+                status.Message = "Product updated successfully.";
+                return status;
+            }
+            catch (Exception)
+            {
+                status.StatusCode = 0;
+                status.Message = "Error occured! Couldn't update product.";
+                return status;
+            }
+        }
         public async Task<Status> DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var product = await context.Products.FindAsync(id);
+                if (product == null)
+                {
+                    status.StatusCode = 0;
+                    status.Message = "Product not found.";
+                    return status;
+                }
+                context.Products.Remove(product);
+                await context.SaveChangesAsync();
+                status.StatusCode = 1;
+                status.Message = "Product deleted successfully.";
+                return status;
+            }
+            catch (Exception)
+            {
+                status.StatusCode = 0;
+                status.Message = "Error occured! Couldn't delete product.";
+                return status;
+            }
         }
 
-        public async Task<Status> DetailsAsync(Guid id)
-        {
-            throw new NotImplementedException();
-        }
 
         public Product? FindById(Guid id)
         {
-            throw new NotImplementedException();
+            return context.Products.Find(id);
         }
 
         public IEnumerable<Product> GetAll()
         {
-            throw new NotImplementedException();
+            return context.Products.ToList();
         }
 
-        public IEnumerable<Product> GetBySearch()
-        {
-            throw new NotImplementedException();
-        }
+        //public IEnumerable<Product> GetBySearch()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public async Task<Status> UpdateAsync(Product model)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
 
